@@ -24,10 +24,6 @@ module.exports = {
     rules: [
       {
         loader: "babel-loader",
-        include: [
-          // webpack-dev-server#1090 for Safari
-          /node_modules\/webpack-dev-server/,
-        ],
       },
       {
         test: /\.(jpeg|jpg|png|gif|svg)$/i,
