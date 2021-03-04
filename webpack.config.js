@@ -10,6 +10,7 @@ module.exports = {
     path: path.resolve(__dirname, "dist"),
     filename: "main.js",
   },
+
   plugins: [
     new webpack.ProgressPlugin(),
     new WorkboxWebpackPlugin.GenerateSW({
@@ -30,10 +31,20 @@ module.exports = {
       },
       {
         test: /\.(jpeg|jpg|png|gif|svg)$/i,
-        loader: "file-loader",
-        options: {
-          name: "/public/icons/[name].[ext]",
-        },
+        use: [
+          {
+            loader: "url-loader",
+            options: {
+              limit: 8192,
+            },
+          },
+          {
+            loader: "file-loader",
+            options: {
+              name: "/public/images/[name].[ext]",
+            },
+          },
+        ],
       },
 
       {

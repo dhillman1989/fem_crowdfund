@@ -108,14 +108,14 @@ define("./sw.js",['./workbox-4b5c23d1'], function (workbox) { 'use strict';
    */
 
   workbox.precacheAndRoute([{
-    "url": "/public/icons/logo-mastercraft.svg",
+    "url": "/public/images/logo-mastercraft.svg",
     "revision": "17fbdfc2b65dde3d22652fd0e0fa60b2"
   }, {
-    "url": "/public/icons/logo.svg",
+    "url": "/public/images/logo.svg",
     "revision": "213a6fb994faca9736132fa9348b8700"
   }, {
     "url": "main.js",
-    "revision": "483d6d9e6188693e6314335655034c52"
+    "revision": "1ea8b017b8fd69204263dcec1eb9fc81"
   }], {});
 
 });
