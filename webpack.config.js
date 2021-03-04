@@ -29,12 +29,13 @@ module.exports = {
         ],
       },
       {
-        test: /\.(jpe?g|png|gif|svg)$/i,
+        test: /\.(jpeg|jpg|png|gif|svg)$/i,
         loader: "file-loader",
         options: {
           name: "/public/icons/[name].[ext]",
         },
       },
+
       {
         test: /\.(js|jsx)$/,
         include: [path.resolve(__dirname, "src")],

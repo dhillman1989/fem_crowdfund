@@ -1,10 +1,13 @@
+$bg-image-desk: url(/src/images/image-hero-desktop.jpg);
+$bg-image-mobile: url(/src/images/image-hero-mobile.jpg);
+
 .header {
   background-image: linear-gradient(
       to bottom,
       rgba(0, 0, 0, 0.7) 20%,
       transparent 50%
     ),
-    url(/src/images/image-hero-mobile.jpg);
+    $bg-image-mobile;
 
   background-size: cover;
   background-position: center;
@@ -18,7 +21,7 @@
         rgba(0, 0, 0, 0.7) 20%,
         transparent 50%
       ),
-      url(/src/images/image-hero-desktop.jpg);
+      $bg-image-desk;
 
     background-position: center;
     background-size: cover;
