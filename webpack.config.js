@@ -60,7 +60,6 @@ module.exports = {
             loader: "sass-loader",
 
             options: {
-              url: false,
               sourceMap: true,
             },
           },
