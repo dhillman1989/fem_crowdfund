@@ -1,0 +1,110 @@
+.button {
+  flex: 1;
+  max-width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  outline: none;
+  font-weight: 700;
+  color: #fff;
+  font-size: 1.4rem;
+  letter-spacing: 0rem;
+  border-radius: 3rem;
+  cursor: pointer;
+  transition: all 0.5s;
+  &:hover {
+    transform: scale(0.95);
+  }
+  &--cta {
+    padding: 2rem 2rem;
+    height: 5.5rem;
+    margin-right: 1rem;
+    background-color: rgb(60, 180, 172);
+
+    &:hover {
+      background-color: $cyan-dark;
+    }
+  }
+  &--bookmark {
+    width: 5.5rem;
+    height: 5.5rem;
+    display: flex;
+    align-items: center;
+    background-color: darken(#fafafa, 5%);
+    font-size: 1.4rem;
+    color: rgb(187, 187, 187);
+
+    &:hover .button--bookmark__icon {
+      background-color: darken(#fafafa, 60%);
+    }
+
+    &__icon {
+      border-radius: 3rem;
+      background-color: $black;
+      width: 5.5rem;
+      height: 5.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.5s;
+      &--active {
+        background-color: $cyan;
+        color: #fff;
+      }
+    }
+    &:hover .button--bookmark__icon--active {
+      background-color: $cyan-dark;
+    }
+
+    & span {
+      color: $grey-dark;
+      display: inline-block;
+      margin: auto;
+      transform: translateX(-1rem);
+      display: none;
+    }
+
+    & span.active {
+      color: $cyan;
+    }
+  }
+
+  &--disabled {
+    background-color: grey;
+    &:hover {
+      background-color: grey;
+    }
+  }
+}
+
+@media only screen and (min-width: 500px) {
+  .button {
+    &--cta {
+      max-width: 40%;
+    }
+    &--bookmark {
+      flex: 1;
+      &__icon {
+        border-radius: 3rem;
+        background-color: $black;
+        width: 5.5rem;
+        height: 5.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.5s;
+      }
+      &__icon--active {
+        background-color: $cyan;
+      }
+      & span {
+        color: $grey-dark;
+        display: inline-block;
+        margin: auto;
+        transform: translateX(-1rem);
+        display: block;
+      }
+    }
+  }
+}

@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  height: 100%;
+}
+
+body {
+  font-family: "Commissioner", sans-serif;
+  height: 100%;
+  font-size: 1.6rem;
+  background-color: #fafafa;
+}
+
+#container {
+  position: relative;
+  min-height: 100%;
+  max-height: 5000000px;
+}
+
+section {
+  margin: auto;
+}
+
+.flex-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+@media only screen and(min-width: 600px) {
+  html {
+    font-size: 70%;
+  }
+}

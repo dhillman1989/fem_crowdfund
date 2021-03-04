@@ -1,0 +1,56 @@
+.card {
+  max-width: calc(100% - 3.6rem);
+  width: 72rem;
+  position: relative;
+  text-align: left;
+  background-color: #fff;
+  margin-top: $spacing-md;
+  margin-bottom: $spacing-md;
+  margin-left: auto;
+  margin-right: auto;
+  padding: $spacing-lg $spacing-sm $spacing-lg $spacing-sm;
+  border-radius: 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  &--pledge {
+    margin: 0;
+    max-width: 100%;
+    margin-top: $spacing-md;
+    padding: $spacing-sm;
+  }
+
+  &--disabled {
+    opacity: 0.6;
+  }
+
+  &__logo {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+  }
+  &__text {
+    margin-top: $spacing-xs;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    margin-bottom: $spacing-sm;
+    color: $grey-dark;
+  }
+  &__buttons {
+    margin: $spacing-md 0 0 0;
+    justify-content: space-between;
+    align-items: stretch;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media only screen and( min-width: 500px) {
+  .card {
+    padding: $spacing-lg;
+
+    &__buttons {
+      flex: 1;
+      justify-content: space-between;
+    }
+  }
+}
