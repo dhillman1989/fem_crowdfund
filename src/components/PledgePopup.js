@@ -5,7 +5,10 @@ const PledgePopup = () => {
   pledgePopup.classList.add("pledgePopup");
   pledgePopup.id = "popup";
   pledgePopup.innerHTML = `
-        <div class="card" id="pledgePopup";>
+        <div class="card" id="pledgePopup">
+
+            <i id="popupCloseIcon" class="fas fa-times fa-2x pledgePopup__close"></i>
+
             <h1 class="card__title heading-secondary">Back this project</h1> 
             <p class="card__text">
                 Want to support us in bringing Mastercraft Bamboo Monitor
@@ -123,6 +126,11 @@ const PledgePopup = () => {
       e.preventDefault();
       ThanksMessage();
     });
+  });
+
+  document.querySelector("#popupCloseIcon").addEventListener("click", () => {
+    const popup = document.querySelector("#popup");
+    popup.parentElement.removeChild(popup);
   });
 };
 

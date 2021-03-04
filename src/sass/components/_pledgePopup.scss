@@ -76,6 +76,16 @@
       color: $cyan;
     }
   }
+
+  &__close {
+    position: absolute;
+    top: $spacing-lg;
+    right: $spacing-lg;
+    color: lighten($grey-dark, 20%);
+    &:hover {
+      color: $grey-dark;
+    }
+  }
 }
 
 @media only screen and (min-width: 600px) {
