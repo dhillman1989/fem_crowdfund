@@ -38,12 +38,6 @@ module.exports = {
               name: "/public/images/[name].[ext]",
             },
           },
-          {
-            loader: "url-loader",
-            options: {
-              limit: 8192,
-            },
-          },
         ],
       },
 
