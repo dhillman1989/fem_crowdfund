@@ -51,18 +51,16 @@ module.exports = {
 
         use: [
           {
+            loader: MiniCssExtractPlugin.loader,
+            options: {
+              publicPath: "../../",
+            },
+          },
+          {
             loader: "style-loader",
           },
           {
             loader: "css-loader",
-
-            options: {
-              url: false,
-              sourceMap: true,
-            },
-          },
-          {
-            loader: "resolve-url-loader",
           },
           {
             loader: "sass-loader",
@@ -76,7 +74,7 @@ module.exports = {
     ],
   },
   resolve: {
-    extensions: [".js", ".jsx", ".scss", ".css", ".svg", ".jpeg", ".jpg"],
+    extensions: [".js", ".jsx", ".scss", ".css"],
   },
 
   devServer: {
