@@ -108,6 +108,12 @@ define("./sw.js",['./workbox-4b5c23d1'], function (workbox) { 'use strict';
    */
 
   workbox.precacheAndRoute([{
+    "url": "/public/images/image-hero-desktop.jpg",
+    "revision": "7f6e2a1747ed58c8d628a9bfd1f28f86"
+  }, {
+    "url": "/public/images/image-hero-mobile.jpg",
+    "revision": "0ca19c3b43e02d3ffc2518241a0cf58e"
+  }, {
     "url": "/public/images/logo-mastercraft.svg",
     "revision": "17fbdfc2b65dde3d22652fd0e0fa60b2"
   }, {
@@ -115,7 +121,7 @@ define("./sw.js",['./workbox-4b5c23d1'], function (workbox) { 'use strict';
     "revision": "213a6fb994faca9736132fa9348b8700"
   }, {
     "url": "main.js",
-    "revision": "684bea367e1f4c04abf454b351f52ed3"
+    "revision": "eeacedd42d33254a9a1ce738198d98ee"
   }], {});
 
 });
