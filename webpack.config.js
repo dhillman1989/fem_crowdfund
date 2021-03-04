@@ -52,7 +52,6 @@ module.exports = {
 
             options: {
               url: false,
-              sourceMap: true,
             },
           },
           {
