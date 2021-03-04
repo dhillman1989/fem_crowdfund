@@ -5,7 +5,7 @@ const Header = () => {
   header.classList.add("header");
   header.innerHTML = `
     <nav class="navbar">
-      <img src=${logo} class="navbar__logo" />
+      <img src=${logo} class="navbar__logo" alt=""/>
 
       <i class="fas fa-bars fa-2x navbar__burger-icon" id="burgerMenu"></i>
       <ul class="navbar__nav navbar__nav--hidden" id="topnav">

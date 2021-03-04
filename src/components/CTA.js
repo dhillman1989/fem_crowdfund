@@ -6,7 +6,7 @@ const CTA = () => {
   cta.classList.add("card");
   cta.classList.add("cta-box");
   cta.innerHTML = `
-  <img src=${logoIcon} class="card__logo"/>
+  <img src=${logoIcon} class="card__logo" alt="Mastercraft logo"/>
     <h3 class="heading-primary">Mastercraft Bamboo Monitor Riser</h3>
     <p class="card__text">A beautiful &amp;
     handcrafted monitor stand to reduce neck and eye strain.</p>
