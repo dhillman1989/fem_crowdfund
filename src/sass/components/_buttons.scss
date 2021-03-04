@@ -18,7 +18,7 @@
   &--cta {
     padding: 2rem 2rem;
     height: 5.5rem;
-    margin-right: 1rem;
+
     background-color: rgb(60, 180, 172);
 
     &:hover {
@@ -26,6 +26,7 @@
     }
   }
   &--bookmark {
+    margin-left: auto;
     width: 5.5rem;
     height: 5.5rem;
     display: flex;
