@@ -20,8 +20,10 @@ const About = () => {
     </p>
   
     <div class="card card--pledge">
-        <h3 class="heading-tertiary">Bamboo Stand </h3> 
-        <h4 class="heading-light">Pledge $25 or more</h4> 
+        <div class="card__title-box">
+            <h3 class="heading-tertiary">Bamboo Stand</h3> 
+            <h4 class="heading-light">Pledge $25 or more</h4> 
+        </div>
         <div class="card__text">
             Black Special Edition computer stand and a personal thank you. You’ll be
             added to our Backer member list. Shipping is included.
@@ -35,8 +37,10 @@ const About = () => {
     </div>
 
     <div class="card card--pledge">
-        <h3 class="heading-tertiary">Black Edition Stand</h3> 
-        <h4 class="heading-light">Pledge $75 or more</h4> 
+        <div class="card__title-box">
+            <h3 class="heading-tertiary">Black Edition</h3> 
+            <h4 class="heading-light">Pledge $75 or more</h4> 
+        </div>
         <div class="card__text">
             Black Special Edition computer stand and a personal thank you. You’ll be
             added to our Backer member list. Shipping is included.
@@ -51,8 +55,10 @@ const About = () => {
 
     
     <div class="card card--pledge card--disabled">
-        <h3 class="heading-tertiary">Mahogany Special Edition</h3> 
-        <h4 class="heading-light">Pledge $200 or more</h4> 
+        <div class="card__title-box">
+            <h3 class="heading-tertiary">Mahogany Special Edition</h3> 
+            <h4 class="heading-light">Pledge $200 or more</h4> 
+        </div>
         <div class="card__text">
             You get two Special Edition Mahogany stands, a Backer T-Shirt, and a personal thank you. You’ll be added
             to our Backer member list. Shipping is included.

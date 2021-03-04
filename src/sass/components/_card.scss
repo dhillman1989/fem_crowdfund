@@ -22,6 +22,11 @@
     opacity: 0.6;
   }
 
+  &__title-box {
+    display: flex;
+    flex-direction: column;
+  }
+
   &__logo {
     position: absolute;
     top: 0;
@@ -48,6 +53,14 @@
   .card {
     padding: $spacing-lg;
 
+    &__title-box {
+      flex-direction: row;
+      justify-content: space-between;
+      margin-bottom: 4rem;
+      & > * {
+        margin: 0;
+      }
+    }
     &__buttons {
       flex: 1;
       justify-content: space-between;
