@@ -1,3 +1,4 @@
+import "./sass/main.scss";
 import Header from "./components/Header";
 import CTA from "./components/CTA";
 import Summary from "./components/Summary";
