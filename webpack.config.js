@@ -76,7 +76,7 @@ module.exports = {
     ],
   },
   resolve: {
-    extensions: [".js", ".jsx", ".scss", ".css"],
+    extensions: [".js", ".jsx", ".scss", ".css", ".svg", ".jpeg", ".jpg"],
   },
 
   devServer: {
