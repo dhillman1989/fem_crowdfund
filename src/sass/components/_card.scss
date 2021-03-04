@@ -1,6 +1,6 @@
 .card {
   max-width: calc(100% - 3.6rem);
-  width: 66rem;
+  width: 67rem;
   position: relative;
   text-align: left;
   background-color: #fff;
@@ -51,7 +51,7 @@
 
 @media only screen and( min-width: 500px) {
   .card {
-    padding: $spacing-xl;
+    padding: $spacing-lg;
 
     &__title-box {
       flex-direction: row;
