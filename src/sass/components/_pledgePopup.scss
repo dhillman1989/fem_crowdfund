@@ -78,9 +78,10 @@
   }
 
   &__close {
+    display: block;
     position: absolute;
-    top: $spacing-lg;
-    right: $spacing-lg;
+    right: $spacing-md;
+    margin-bottom: 3rem;
     color: lighten($grey-dark, 20%);
     &:hover {
       color: $grey-dark;

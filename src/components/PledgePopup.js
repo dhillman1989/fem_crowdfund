@@ -7,7 +7,7 @@ const PledgePopup = () => {
   pledgePopup.innerHTML = `
         <div class="card" id="pledgePopup">
 
-            <i id="popupCloseIcon" class="fas fa-times fa-2x pledgePopup__close"></i>
+            <i id="popupCloseIcon" class="fas fa-times  pledgePopup__close"></i>
 
             <h1 class="card__title heading-secondary">Back this project</h1> 
             <p class="card__text">
